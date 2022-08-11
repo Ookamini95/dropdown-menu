@@ -1,0 +1,337 @@
+/**********/
+/***CARD**/
+/**********/
+
+:root {
+    --color-text: hsl(0, 0%, 41%);
+    --color-background: rgb(240, 240, 240);
+    --color-card: white;
+}
+
+.card-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+    background-color: var(--color-background);
+    
+    font-weight: 600;
+    
+}
+
+.main-card {
+    
+    width: 90%;
+    height: 80vh;
+    
+    /* transform: scale(0.9); */
+    
+        /* top:50%; */
+        /* bottom: 50%; */
+        /* transform: translate(-50%,-50%); */
+
+
+    background-color: var(--color-card);
+
+    padding: 1.5rem 0 ;
+    z-index: 100;
+
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.057);
+}
+
+/***********/
+/* CARD NAV-BAR */
+/***********/
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 2rem 3rem;
+    color: var(--color-text);
+}
+
+.nav-primary,
+.nav-secondary {
+    list-style: none;
+    display: grid;
+
+    justify-items: center;
+    align-items: center;
+
+    font-size: 1.33rem;
+    height: 100%;
+
+}
+
+.nav-primary {
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: 4.2rem;
+}
+
+.nav-primary > li:nth-last-child(-n+2)   {
+    justify-self: start;
+}
+
+.nav-secondary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    
+}
+
+.nav-primary > img {
+    transform: translateY(3px);
+}
+
+.nav-secondary > li:last-child {
+    background-color: var(--color-card);
+    padding: 0.5rem 1rem;
+    transition: all 1s ease, color 2s ease, border 0.6s;
+    /* box-shadow: inset 0 0 0 1.2px black; */
+    border: 1.2px solid black;
+    border-radius: 8px;
+
+}
+
+/* TODO: make this cool  */
+.nav-secondary > li:last-child:hover {
+    background-color: aquamarine ;
+    box-shadow: 0 0 4px 5px rgba(127, 255, 212, 0.13);
+    color: rgba(0, 0, 0, 0.402);
+    border: 1.2px solid transparent; 
+}
+
+.nav-secondary > li:last-child:active {
+    box-shadow: none;
+}
+
+.flex-nav {
+    display: flex;
+}
+
+
+/***********/
+/* CARD MAIN-TEXT */
+/***********/
+
+/* THIS MAKES IMAGES FIT */
+.card-content>* {
+    min-width: 0;
+    min-height: 0;
+}
+
+.card-content {
+    padding: 1rem 10rem;
+    height: calc(100% - 70px);
+    gap: 3rem;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100%;
+    align-items: flex-start;
+
+    max-width: 50rem;
+    /* pointer-events : none; */
+}
+
+.main-header {
+    font-size: 6.4rem;
+    letter-spacing: -2.4px;
+    line-height: 5.05rem;
+
+    margin: 10rem 0 4rem 0;
+}
+
+.main-text {
+    font-size: 1.8rem;
+}
+
+.btn {
+    width: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px black;
+    color: black;
+}
+
+.learn-more {
+    box-sizing: content-box;
+    margin: 3rem 0 6rem 0;
+    padding: 1rem 0.5rem;
+
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+    font-weight: 600;
+
+    transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in, color 0.3s ease-in;
+}
+
+.client-logos {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.client-logos > img:nth-child(2) {
+    margin-left: 10px;
+}
+
+/***********/
+/* CARD MAIN-IMAGE */
+/***********/
+.card-image {
+    object-fit: cover;
+    height: 90%;
+}
+
+.image-pc {
+    transform: translateY(-2%);
+}
+
+/* .image-box {
+    background-image: url(./images/image-hero-desktop.png);
+    background-size: cover;
+} */
+
+/***********/
+/* MENUS */
+/***********/
+.nav-el { 
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-primary .nav-el:last-child {
+    transform: translateX(-50%);
+}
+
+.nav-menu {
+    width:100px;
+    height:110px;
+    background-color: #fff;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    transform: translateY(30%);
+
+    border-radius: 10px;
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.03);
+    
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    
+    
+    row-gap: 0.5rem;
+    
+    list-style-type: none;
+    font-size: 1.2rem;
+
+    transform: scale(0.9);
+
+    width: 100%;
+    margin: 0 12px;
+}
+
+
+
+.menu-link {
+    text-decoration: none;
+    color: var(--color-text);
+    margin-bottom: 0.5px;
+}
+
+/* .menu-link:link,
+.menu-link:visited {
+
+} */
+
+.menu-link:hover,
+.menu-link:active {
+    color:rgba(0, 0, 0, 0.5);
+    box-shadow:  0 1px 2px 1px rgba(0, 0, 0, 0.04);
+    padding: 3px;
+}
+
+.menu-link:active {
+    box-shadow:  0 0px 2px 2px rgba(0, 0, 0, 0.05);
+    
+    text-align: center;
+    font-size: 1rem;
+}
+
+.menu-link:active .menu-icon {
+    transform: scale(0.8) translateY(5px);
+}
+
+.menu-icon {
+    transform: scale(0.9) translateY(5px);
+}
+
+.nav-menu--small {
+    left: 0;
+
+    width: 85px;
+    height: 90px;
+
+    transform: translateY(37%);
+}
+
+.nav-menu--small .menu-list {
+    transform: translateY(15%);
+    row-gap: 0.8rem;
+}
+
+.menu-inactive--arrow , .menu-inactive {
+    display: none;
+}
+
+.hamburger-icon {
+    transform: scale(1.1);
+    position: absolute;
+    right: 32px;
+    top: 40px;
+
+    z-index: 999;
+}
+
+
+.nav-sendary--fix {
+    display: flex;
+}
+
+
+
+/***********/
+/***SIDE MENU***/
+/*************/
+
+.sidebar {
+    font-size: 1.8rem;
+}
+
+sidebar-primary--list {
+
+}

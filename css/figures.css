@@ -1,0 +1,167 @@
+/**********/
+/***FIGURES**/
+/**********/
+
+
+/* TODO: Fix zoom problems 
+    TODO: Add last figure
+*/
+
+/* DOT */
+.dot {
+    width: 5rem;
+    position: absolute;
+
+    top:50%;
+    left:0;
+    transform: translateY(-10%) ;
+
+    opacity: 0.8;
+}
+
+.figure-dots-cotaier{
+    /* MAX - PF */
+    grid-template-rows: repeat(6,fr);
+    
+}
+
+
+
+.figure-small-circle{
+    background-color:aquamarine;
+    width:var(--circle-dimension);
+    height: var(--circle-dimension);
+    
+    border-radius: 50%;
+}
+
+
+/* HALF CIRCLE */
+.half-circle {
+    width: 20rem;
+    height: 10rem;
+
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    
+    background-color: transparent;
+    border-radius: 20rem 20rem 0 0 ;
+    border: 1rem solid aquamarine;
+    border-bottom: none;
+
+    transform: scale(1.5) translate(20%, -25%);
+
+}
+
+.half-circle::after {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 84px;
+    left: -10.1px;
+    
+}
+
+.half-circle::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 84px;
+    left: 180.1px;
+    
+}
+
+
+/* SLASHES */
+
+.slashes {
+    width: 40rem;
+    height: 20rem;
+
+    overflow: hidden;
+    position: absolute;
+
+    right: 5rem;
+}
+
+.slash {
+    width: 5rem;
+    height: 40rem;
+
+    border: 1rem solid aquamarine;
+    opacity: 0.4;
+
+    transform: rotate(25deg) translateY(-40%)
+    
+}
+
+/* WIGGLES */
+
+.wiggles {
+    width: 20rem;
+    height: 5rem;
+
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+
+.wiggles > * {
+    position: relative;
+    z-index: 1;
+}
+
+.wiggle {
+    width: 4rem;
+    height: 4rem;
+
+    transform: rotate(45deg) translate(13%, 26%);
+    transform-origin: bottom left;
+
+    background-color: transparent;
+    border: 0.6rem solid rgb(250, 163, 132);
+
+    
+
+}
+
+.wiggle::before {
+    content: '';
+    
+    background-color: rgb(240, 240, 240);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    
+}
+
+.wiggle::after {
+    content: '';
+    
+    background-color: rgb(240, 240, 240);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    
+    right: -0.5rem;
+    bottom: -4rem;
+}
+
+
+.wiggles--bot {
+    bottom: 4rem;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <!-- displays site properly based on user's device -->
+
+  <!--STYLES-->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/figures.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  <!-- SCRIPTS -->
+
+  <script defer src="./js/menu.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <!-- FIGURES -->
+
+  <figure class="dot">
+    <div class="grid--3-col gap--small figure-dots-cotaier">
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+      <div class="figure-small-circle"></div>
+    </div>
+  </figure>
+
+
+  <figure class="half-circle">
+  </figure>
+
+  <figure class="slashes">
+    <div class="slash"></div>
+  </figure>
+
+  <figure class="wiggles">
+    <div class="wiggle"></div>
+    <div class="wiggle"></div>
+    <div class="wiggle"></div>
+    <div class="wiggle"></div>
+    <div class="wiggle"></div>
+  </figure>
+
+  <figure class="wiggles wiggles--bot">
+    <div class="wiggle"></div>
+    <div class="wiggle"></div>
+    <div class="wiggle"></div>
+    <div class="wiggle"></div>
+    <div class="wiggle"></div>
+  </figure>
+
+  <!-- CARD -->
+
+  <div class="card-container">
+    <div class="main-card ">
+
+      <nav class="main-nav ">
+        <div>
+          <ul class="nav-primary">
+            <img src="./images/logo.svg" alt="Logo" srcset="">
+
+            <li class="nav-el hide--on-query">
+              <div class="menu-el menu-features " data-menu="features">
+                Features <img class="arrow-swg" src="./images/icon-arrow-down.svg" alt="Open Menu" srcset=""> <img
+                  class="arrow-swg menu-inactive--arrow " src="./images/icon-arrow-up.svg" alt="Close Menu" srcset="">
+              </div>
+              <div class="centered menu-inactive nav-menu nav-menu--hidden animate-nav-menu--open">
+                <ul class="menu-list ">
+                  <li class="menu-entry">
+                    <a href="https://www.google.it/" target="_blank" class="menu-link">
+                      <img class="menu-icon" src="./images/icon-todo.svg" alt="Todo icon" srcset="">
+                      Todo List
+                    </a>
+                  </li>
+
+                  <li class="menu-entry">
+                    <a href="#" class="menu-link">
+                      <img class="menu-icon" src="./images/icon-calendar.svg" alt="Calendar icon" srcset=""> Calendar
+                    </a>
+                  </li>
+
+                  <li class="menu-entry">
+                    <a href="#" class="menu-link">
+                      <img class="menu-icon" src="./images/icon-reminders.svg" alt="Reminders icon" srcset="">
+                      Reminders
+                    </a>
+                  </li>
+
+                  <li class="menu-entry">
+                    <a href="#" class="menu-link">
+                      <img class="menu-icon" src="./images/icon-planning.svg" alt="Planning icon" srcset=""> Planning
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-el">
+              <div class="menu-el menu-company" data-menu="company">
+                Company <img class="arrow-swg" src="./images/icon-arrow-down.svg" alt="Open Menu" srcset=""> <img
+                  class="arrow-swg menu-inactive--arrow" src="./images/icon-arrow-up.svg" alt="Close Menu" srcset="">
+              </div>
+
+              <div class="centered menu-inactive nav-menu nav-menu--small animate-nav-menu--open nav-menu--hidden ">
+                <ul class="menu-list ">
+
+                  <li class="menu-entry">
+                    <a href="#" class="menu-link">
+                      History
+                    </a>
+                  </li>
+                  <li class="menu-entry">
+                    <a href="#" class="menu-link">
+                      Our Team
+                    </a>
+                  </li>
+                  <li class="menu-entry">
+                    <a href="#" class="menu-link">
+                      Blog
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-el">Careers</li>
+            <li class="nav-el">About</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="nav-secondary nav-sendary--fix">
+            <li class="nav-el">Login</li>
+            <li class="nav-secondary--fix">
+              <img class="show--query hamburger-icon" src="./images/icon-menu.svg" alt="Menu a tendina" srcset="">
+              <img class="hamburger-icon--hide hamburger-icon" src="./images/icon-close-menu.svg" alt="Menu a tendina"
+                srcset="">
+            </li>
+            <li class="nav-el">Register</li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="card-content grid--2-col grid--query">
+
+        <div class="image-box image-fix--query centered show--query">
+          <img class="card-image" src="./images/image-hero-mobile.png" alt="A cool hipster dude using a laptop"
+            srcset="">
+        </div>
+
+        <div class="card-text centered">
+          <h1 class="main-header animate--word-color">Make remote work</h1>
+          <p class="main-text">Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.</p>
+
+          <button class="btn learn-more"> Learn more </button>
+
+          <div class="client-logos">
+            <img src="./images/client-databiz.svg" alt="Databiz logo" srcset="">
+            <img src="./images/client-audiophile.svg" alt="Audiophile logo" srcset="">
+            <img src="./images/client-meet.svg" alt="Meet logo" srcset="">
+            <img src="./images/client-maker.svg" alt="Maker logo" srcset="">
+          </div>
+        </div>
+
+
+        <div class="image-box image-pc centered hide--on-query">
+          <img class="card-image" src="./images/image-hero-desktop.png" alt="A cool hipster dude using a laptop"
+            srcset="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <img class="arrow-swg menu-active" src="./images/icon-arrow-down.svg"
+                alt="Open Menu" srcset=""> <img class="arrow-swg" src="./images/icon-arrow-up.svg" alt="Close Menu"
+                srcset=""> -->
+
+  <!-- TxT
+  
+  Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes,
+  create team rituals, and watch productivity soar.
+
+  Learn more -->
+
+
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-primary">
+        <ul class="sidebar-list">
+          <li class="sidebar-primary--entry">
+
+            <div class="sidemenu-el sidemenu-features " data-menu="features">
+              Features <img class="arrow-swg" src="./images/icon-arrow-down.svg" alt="Open Menu" srcset=""> <img
+                class="arrow-swg menu-inactive--arrow " src="./images/icon-arrow-up.svg" alt="Close Menu" srcset="">
+            </div>
+
+            <div class="sidemenu-features--hidden">
+
+            </div>
+
+          </li>
+          <li class="sidebar-primary--entry">
+
+            <div class="sidemenu-el sidemenu-features " data-menu="features">
+              Company <img class="arrow-swg" src="./images/icon-arrow-down.svg" alt="Open Menu" srcset=""> <img
+                class="arrow-swg menu-inactive--arrow " src="./images/icon-arrow-up.svg" alt="Close Menu" srcset="">
+            </div>
+
+            <div class="sidemenu-features--hidden">
+
+            </div>
+
+          </li>
+          <li class="sidebar-primary--entry">Careers</li>
+          <li class="sidebar-primary--entry">About</li>
+      </div>
+
+      </ul>
+
+      <div class="sidebar-secondary">
+        <ul class="sidebar-list">
+          <li class="sidebar-secondary--entry">Login in</li>
+          <li class="sidebar-secondary--entry">Register</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
