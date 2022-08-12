@@ -350,11 +350,11 @@
 
 .sidebar {
 
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     display: flex;
     flex-direction: column;
-    gap: 8.2rem;
+    gap: 6.4rem;
     align-items: center;
     justify-content: center;
 
