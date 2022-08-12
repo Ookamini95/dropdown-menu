@@ -334,7 +334,7 @@
     display: auto;
 
     min-height: 100%;
-    width: 60vw;
+    width: 65vw;
     position: absolute;
 
     top: 0;
@@ -349,7 +349,8 @@
 }
 
 .sidebar {
-    font-size: 3.2rem;
+
+    font-size: 2.8rem;
 
     display: flex;
     flex-direction: column;
@@ -412,9 +413,11 @@
 .sidebar--hide {
     opacity: 0;
     visibility: hidden;
+    overflow: hidden;
     width: 0;
+    height: 0;
     pointer-events: none;
-    transform: translateX(300px);
+    transform: translateX(50px);
 }
 
 
