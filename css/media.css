@@ -119,3 +119,8 @@
 .hamburger-icon--hide {
     display: none;
 }
+
+
+.submenu-arrow {
+    transform: translateY(-3px) scale(0.95);
+}
