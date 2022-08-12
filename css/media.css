@@ -107,6 +107,10 @@
     .arrow-swg{
         transform: scale(1.5) translateY(-5px);
     }
+
+    .main-card {
+        box-shadow: none;
+    }
 }
 
 
