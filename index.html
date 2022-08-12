@@ -155,9 +155,9 @@
           <ul class="nav-secondary nav-sendary--fix">
             <li class="nav-el">Login</li>
             <li class="nav-secondary--fix">
-              <img class="show--query hamburger-icon" src="./images/icon-menu.svg" alt="Menu a tendina" srcset="">
+              <!-- <img class="show--query hamburger-icon" src="./images/icon-menu.svg" alt="Menu a tendina" srcset="">
               <img class="hamburger-icon--hide hamburger-icon" src="./images/icon-close-menu.svg" alt="Menu a tendina"
-                srcset="">
+                srcset=""> -->
             </li>
             <li class="nav-el">Register</li>
           </ul>
@@ -217,32 +217,71 @@
 
   Learn more -->
 
+  <img class="show--query hamburger-icon" src="./images/icon-menu.svg" alt="Menu a tendina" srcset="">
+  <img class="hamburger-icon--hide hamburger-icon" src="./images/icon-close-menu.svg" alt="Menu a tendina" srcset="">
 
-  <div class="sidebar-container">
+  <div class="sidebar-container sidebar--hide">
     <div class="sidebar">
       <div class="sidebar-primary">
         <ul class="sidebar-list">
           <li class="sidebar-primary--entry">
 
-            <div class="sidemenu-el sidemenu-features " data-menu="features">
+            <div class="sidemenu-el sidemenu-features--button " data-menu="features">
               Features <img class="arrow-swg" src="./images/icon-arrow-down.svg" alt="Open Menu" srcset=""> <img
                 class="arrow-swg menu-inactive--arrow " src="./images/icon-arrow-up.svg" alt="Close Menu" srcset="">
             </div>
 
-            <div class="sidemenu-features--hidden">
-
+            <div class="sidemenu-features sidemenu--hidden">
+              <ul class="sidemenu-features--list">
+                <li class="sidemenu-features--element">
+                  <a href="#" class="submenu-link">
+                    <img class="submenu-icon" src="./images/icon-todo.svg" alt="Todo icon" srcset=""> Todo
+                  </a>
+                </li>
+                <li class="sidemenu-features--element">
+                  <a href="#" class="submenu-link">
+                    <img class="submenu-icon" src="./images/icon-calendar.svg" alt="Calendar icon" srcset=""> Calendar
+                  </a>
+                </li>
+                <li class="sidemenu-features--element">
+                  <a href="#" class="submenu-link">
+                    <img class="submenu-icon" src="./images/icon-reminders.svg" alt="Reminders icon" srcset="">
+                    Reminders
+                  </a>
+                </li>
+                <li class="sidemenu-features--element">
+                  <a href="#" class="submenu-link">
+                    <img class="submenu-icon" src="./images/icon-planning.svg" alt="Planning icon" srcset=""> Planning
+                  </a>
+                </li>
+              </ul>
             </div>
 
           </li>
           <li class="sidebar-primary--entry">
 
-            <div class="sidemenu-el sidemenu-features " data-menu="features">
-              Company <img class="arrow-swg" src="./images/icon-arrow-down.svg" alt="Open Menu" srcset=""> <img
+            <div class="sidemenu-el sidemenu-company--button " data-menu="company">
+              Company <img class=" arrow-swg" src="./images/icon-arrow-down.svg" alt="Open Menu" srcset=""> <img
                 class="arrow-swg menu-inactive--arrow " src="./images/icon-arrow-up.svg" alt="Close Menu" srcset="">
             </div>
 
-            <div class="sidemenu-features--hidden">
-
+            <div class="sidemenu-company sidemenu--hidden">
+              <ul class="sidemenu-features--list">
+                <li class="sidemenu-features--element">
+                  <a href="#" class="submenu-link">
+                    History
+                  </a>
+                </li>
+                <li class="sidemenu-features--element">
+                  <a href="#" class="submenu-link">
+                    Our Team
+                  </a>
+                </li>
+                <li class="sidemenu-features--element">
+                  <a href="#" class="submenu-link">
+                    Blog
+                  </a>
+                </li>
             </div>
 
           </li>
@@ -254,7 +293,7 @@
 
       <div class="sidebar-secondary">
         <ul class="sidebar-list">
-          <li class="sidebar-secondary--entry">Login in</li>
+          <li class="sidebar-secondary--entry">Login</li>
           <li class="sidebar-secondary--entry">Register</li>
         </ul>
       </div>

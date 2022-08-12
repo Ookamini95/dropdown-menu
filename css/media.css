@@ -103,6 +103,10 @@
     .card-content {
         transform: translateY(-7%);
     }
+
+    .arrow-swg{
+        transform: scale(1.5) translateY(-5px);
+    }
 }
 
 

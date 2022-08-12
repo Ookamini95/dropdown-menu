@@ -19,13 +19,36 @@ companyButton.addEventListener('click', toggleMenu)
 // TODO: A. hamburger menu interaction
 //      B. sub menu interaction
 
+// hamburger-icon--hide
+const sideBar = document.querySelector('.sidebar-container')
 const hamBtns = document.querySelectorAll('.hamburger-icon')
 
 hamBtns.forEach(btn => {
     btn.addEventListener('click', toggleSideMenu)
 })
 
-// hamburger-icon--hide
+//submenus
+
+const sidemenuFeatureBtn = document.querySelector('.sidemenu-features--button')
+const sidemenuFeature = document.querySelector('.sidemenu-features')
+
+const sidemenuCompanyBtn = document.querySelector('.sidemenu-company--button')
+const sidemenuCompany = document.querySelector('.sidemenu-company')
+
+
+sidemenuFeatureBtn.addEventListener('click', () => {
+    sidemenuFeature.classList.toggle('sidemenu--hidden')
+    const arrows = document.querySelectorAll('.sidemenu-features--button .arrow-swg')
+    arrows.forEach(arrow => arrow.classList.toggle('menu-inactive--arrow'))
+})
+
+sidemenuCompanyBtn.addEventListener('click', () => {
+    sidemenuCompany.classList.toggle('sidemenu--hidden')
+    const arrows = document.querySelectorAll('.sidemenu-company--button .arrow-swg')
+    arrows.forEach(arrow => arrow.classList.toggle('menu-inactive--arrow'))
+})
+
+
 
 // Helper functions
 
@@ -42,19 +65,18 @@ function toggleMenu(event) {
 }
 
 function toggleSideMenu() {
-
-    // event.target.classList.toggle('hamburger-icon--hide')
     hamBtns.forEach(btn => {
-        console.log(btn.classList)
+
         btn.classList.toggle('hamburger-icon--hide')
-        // console.log(btn)
-        console.log(btn.classList)
+
+
     })
+    sideBar.classList.toggle('sidebar--hide')
 }
 
 
-function getArrow(menu) {
-    const arrows = menu.closest('.nav-el')
+function getArrow(menu, string = '.nav-el') {
+    const arrows = menu.closest(string)
     return arrows
 }
 
